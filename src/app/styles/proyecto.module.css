@@ -1,7 +1,7 @@
 .proyecto_container_container_real {
   margin-bottom: 10px;
   width: 100vw;
-  height: 450px;
+  height: 570px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,20 +11,13 @@
     width: 95%; 
     height: 100%;
     background-color: rgb(250, 234, 207);
-    
     justify-content: center;
     flex-direction: column;
     border-radius: 10px;
   }
 
-.proyecto_foto_container {
-  background-color: red;
-  border-radius: 20px;
-  width: 100%;
-  height: 90%;
-}  
-
 .proyecto_foto{
+  background-color: aqua  ;
   margin-top: 18px;
   width: 100%;
   height: 100%;
@@ -33,8 +26,8 @@
 /* BOTÓN MÁS INFORMACIÓN */
 
 .boton_mas_informacion_container {
-  margin-top: 10px;
-  margin-bottom: 25px;
+  margin-top: 5px;
+  margin-bottom: 28px;
   display: flex;
   justify-content: center;
   align-items: center;
