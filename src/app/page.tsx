@@ -40,8 +40,8 @@ export default function Home() {
     
       <ProyectoComponent titulo_proyecto={"TECH ECOMMERCE"} nombre_pagina={"tech-ecommerce"} ></ProyectoComponent>
       <ProyectoComponent titulo_proyecto={"APP PARA SUBIR CANCIONES"}  nombre_pagina={"app-canciones"}></ProyectoComponent>
-      <ProyectoComponent titulo_proyecto={"ECOMMERCE API REST"}> </ProyectoComponent>
-      <ProyectoComponent titulo_proyecto={"HTML5 Y CSS3 MAQUETACIÓN"}> </ProyectoComponent>
+      <ProyectoComponent titulo_proyecto={"ECOMMERCE MAQUETACIÓN"}  nombre_pagina={"app-canciones"}></ProyectoComponent>
+      <ProyectoComponent titulo_proyecto={"REST API"}  nombre_pagina={"app-canciones"}></ProyectoComponent>
 
     </>
   )

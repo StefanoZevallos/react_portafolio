@@ -6,7 +6,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 
 
-const ProyectoComponent = ({ titulo_proyecto, nombre_pagina, video }) => {
+const ProyectoComponent = ({ titulo_proyecto, nombre_pagina }) => {
 
   return (
     <>
