@@ -22,7 +22,7 @@ const Slider = ({ data }) => {
           <BsArrowLeftCircleFill onClick={() => nextSlide()} className={`${styles.arrow} ${styles.arrow_left}`} />
           <div className={`${styles.carrusel}`}>
             {data.map((element, idx) => (
-              <Image width={"1000"} height={"1000"} src={element.image} key={idx} className={`${slide === idx ? styles.slide : `${styles.slide} ${styles.slide_hidden}`}`}>
+              <Image key={idx} alt={element.alt} width={"1000"} height={"1000"} src={element.image}  className={`${slide === idx ? styles.slide : `${styles.slide} ${styles.slide_hidden}`}`}>
               </Image>
             ))}
           </div>
@@ -30,7 +30,7 @@ const Slider = ({ data }) => {
         </div>
         <div>
           {data.map((element, idx) => (
-            <p className={`${slide === idx ? styles.slide : `${styles.slide} ${styles.slide_hidden}`}`}>{element.descripcion} </p>
+            <p key={idx} className={`${slide === idx ? styles.slide : `${styles.slide} ${styles.slide_hidden}`}`}>{element.descripcion} </p>
         ))}
         </div>
       </div>
