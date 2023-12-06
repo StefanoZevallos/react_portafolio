@@ -1,4 +1,5 @@
 "use client"
+import Image from 'next/image';
 import React, { useState } from 'react'
 import styles from "@/app/styles/slider.module.css";
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
@@ -16,24 +17,26 @@ const Slider = ({ data }) => {
 
   return (
     <>
-
-      <div className="flex flex-col items-center justify-evenly">
-      <BsArrowLeftCircleFill onClick={() => nextSlide()} className={`${styles.arrow} ${styles.arrow_left}`} />
-      <div className={`${styles.carrusel}`}>
-        {data.map((element, idx) => (
-          <img
-            className={`${slide === idx ? styles.slide : `${styles.slide} ${styles.slide_hidden}`}`}
-            key={idx}
-            src={element.image}
-            alt={`Image ${idx}`}
-          />
+      <div className='flex flex-col'>
+        <div className="flex flex-col items-center justify-evenly">
+          <BsArrowLeftCircleFill onClick={() => nextSlide()} className={`${styles.arrow} ${styles.arrow_left}`} />
+          <div className={`${styles.carrusel}`}>
+            {data.map((element, idx) => (
+              <Image width={"1000"} height={"1000"} src={element.image} key={idx} className={`${slide === idx ? styles.slide : `${styles.slide} ${styles.slide_hidden}`}`}>
+              </Image>
+            ))}
+          </div>
+          <BsArrowRightCircleFill onClick={() => prevSlide()} className={`${styles.arrow} ${styles.arrow_right}`} />
+        </div>
+        <div>
+          {data.map((element, idx) => (
+            <p className={`${slide === idx ? styles.slide : `${styles.slide} ${styles.slide_hidden}`}`}>{element.descripcion} </p>
         ))}
+        </div>
       </div>
-      <BsArrowRightCircleFill onClick={() => prevSlide()} className={`${styles.arrow} ${styles.arrow_right}`} />
-    </div>
 
 
-    {/* <span className={styles.indicators}>
+      {/* <span className={styles.indicators}>
         {data.map((_, idx) => {
           return (
             <button
@@ -45,7 +48,7 @@ const Slider = ({ data }) => {
         })}
       </span>
      */}
-   
+
     </>
   )
 }

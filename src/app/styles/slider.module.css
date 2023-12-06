@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 450px;
+    height: 280px;
 }
 
 .slide {
@@ -42,8 +42,7 @@
 
 .indicators {
     display: flex;
-    position: absolute;
-    bottom: 1rem;
+    bottom: 2rem;
 }
 
 .indicator {
