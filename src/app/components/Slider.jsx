@@ -33,8 +33,7 @@ const Slider = ({ data }) => {
     </div>
 
 
-
-      {/* <span className={styles.indicators}>
+    {/* <span className={styles.indicators}>
         {data.map((_, idx) => {
           return (
             <button
@@ -44,7 +43,8 @@ const Slider = ({ data }) => {
             </button>
           );
         })}
-      </span> */}
+      </span>
+     */}
    
     </>
   )
