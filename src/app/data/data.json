@@ -1,0 +1,21 @@
+ { "data" : [
+    {
+        "id": 1,
+        "alt":"imagen1",
+        "image": "https://res.cloudinary.com/dqpijrvsq/image/upload/v1697146237/mcyqvvl80bc0dn7gvqag.jpg",
+        "descripcion":"Funcionalidad creada "
+    },
+    {
+        "id": 2,
+        "alt":"imagen2",
+        "image": "https://res.cloudinary.com/dqpijrvsq/image/upload/v1697165755/eeyrsyc49ljnekovc9tk.webp",
+        "descripcion":"Funcionalidad creada 2 "
+    },
+    {
+        "id": 3,
+        "alt":"imagen3",
+        "image": "https://res.cloudinary.com/dqpijrvsq/image/upload/v1697148402/pi0dlvpxcitm5zonqhbr.jpg",
+        "descripcion":"Funcionalidad creada 3"
+    }
+]
+}
