@@ -5,12 +5,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .proyecto_container_real {
     width: 95%; 
     height: 100%;
-    background-color: rgb(250, 234, 207);
+    background-color: rgb(79, 115, 247);
     justify-content: center;
     flex-direction: column;
     border-radius: 10px;
@@ -26,7 +27,7 @@
 /* BOTÓN MÁS INFORMACIÓN */
 
 .boton_mas_informacion_container {
-  margin-top: 5px;
+  margin-top: 15px;
   margin-bottom: 28px;
   display: flex;
   justify-content: center;
@@ -36,8 +37,44 @@
 
 .boton_mas_informacion {
   border-radius: 5px;
-  background-color: rgb(88, 88, 115);
+  background-color: rgb(76, 240, 6);
   color: white;
   padding: 4px;
   font-weight: bolder;
+}
+
+/* slider tecnologías */
+
+
+.proyecto_container_real {
+  overflow: hidden;
+}
+
+.slider_tecnologias {
+  display: flex;
+  gap: 15px;
+  white-space: nowrap;
+  animation: scroll 20s linear infinite;
+  width: max-content;
+}
+
+.slider_tecnologias p {
+  flex: 0 0 auto;
+}
+
+/* Duplicar los elementos del slider */
+.slider_tecnologias::before {
+  content: "";
+  flex: 0 0 auto;
+  margin-left: auto;
+}
+
+/* Animación ajustada para el bucle continuo */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
